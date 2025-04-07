@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    // ... other options
+    "module": "NodeNext", // or "esnext" (or other ESM-compatible option)
+    "moduleResolution": "nodenext", // Important for Node.js ESM resolution
+    "target": "ES2020", // Or a target that supports top-level await if you need it
+    "outDir": "./dist", // Output directory for compiled files if you compile
+    "strict": true, // Enable all strict type-checking options
+    "esModuleInterop": true, // Allows default imports from modules with no default export
+    "skipLibCheck": true, // Skips type checking of declaration files
+    "resolveJsonModule": true, // Allows importing JSON files as modules
+    "sourceMap": true // Generates corresponding .map files for debugging
+  },
+  "include": ["src/**/*.ts", "src/server.ts", "src/db/prisma.ts"],
+  "exclude": ["node_modules"]
+}
